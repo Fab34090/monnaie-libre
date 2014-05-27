@@ -124,7 +124,7 @@ class CarpoolingType extends AbstractType
 										'label' => 'Voiture'))
             ->add('smoker', 'choice', array(
 										'label' => "Fumeur",
-										'choices' => array(true => "Oui", false => "Oui")))
+										'choices' => array(true => "Oui", false => "Non")))
             ->add('pets', 'choice', array( 
 										'label' => "Animaux",
 										'choices' => array(true => "Oui", false => "Non")))

@@ -16,7 +16,7 @@
 				<tr>
 					<td>
 						<div class = "well">
-							<h4 class = "service">Createur :</h4> {{ couchsurfing.user.login }} <br /><img src="{{ asset('img/yinyang.png') }}"/> {{ couchsurfing.user.karma }}
+							<h4 class = "service">Créateur :</h4> {{ couchsurfing.user.login }} <br /><img src="{{ asset('img/yinyang.png') }}"/> {{ couchsurfing.user.karma }}
 							<h4 class = "service">Date de création :</h4> {{ couchsurfing.creationDate|date("d/m/Y") }}
 							<h4 class = "service">Description :</h4> 
 							{% if couchsurfing.comment is null %} 
