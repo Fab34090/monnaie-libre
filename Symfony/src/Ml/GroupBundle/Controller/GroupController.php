@@ -134,7 +134,13 @@ class GroupController extends Controller {
 					
 					// If creator add members
 					$users_initial = $req->request->get("form");
-					$users = $users_initial['users'];
+					if(isset($users_initial['users'])) {
+						$users = $users_initial['users'];
+					}
+					else {
+						$users = NULL;
+					}
+					
 					
 					if($users != NULL) {		
 						$group_id = $this->getDoctrine()

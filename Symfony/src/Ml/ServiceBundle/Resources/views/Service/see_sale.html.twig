@@ -16,7 +16,7 @@
 				<tr>
 					<td>
 						<div class = "well">
-							<h4 class = "service">Créateur :</h4> {{ sale.user.login }}
+							<h4 class = "service">Créateur :</h4> {{ sale.user.login }} <br /> <img src="{{ asset('img/yinyang.png') }}"/> {{ sale.user.karma }}
 							<h4 class = "service">Date de création :</h4> {{ sale.creationDate|date("d/m/Y") }}
 							<h4 class = "service">Description :</h4> 
 							{% if sale.comment is null %} 

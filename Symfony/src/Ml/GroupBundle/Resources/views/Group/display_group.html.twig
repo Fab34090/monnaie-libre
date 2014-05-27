@@ -151,6 +151,9 @@
 														<td>
 															<center><b>Créateur</b></center>
 														</td>
+														<td>
+															<center><b>Karma</b></center>
+														</td>
 														{% if is_administrator is defined %}
 															{% if is_administrator is sameas(true) %}
 																<td>
@@ -195,6 +198,9 @@
 															</td>
 															<td>
 																<center>{{ service.user.login }}</center>
+															</td>
+															<td>
+																<center><img src="{{ asset('img/yinyang.png') }}"/> {{ service.user.karma }}</center>
 															</td>
 															{% if is_administrator is defined %}
 																{% if is_administrator is sameas(true) %}
